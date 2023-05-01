@@ -65,4 +65,7 @@ Course content
    15:46
    # 5. custom splash screen in flutter
    13:33
+
+# 5. custom splash screen in flutter
+13:33
  
