@@ -1,4 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class MySplashScreen extends StatefulWidget {
@@ -9,6 +11,15 @@ class MySplashScreen extends StatefulWidget {
 }
 
 class _MySplashScreenState extends State<MySplashScreen> {
+
+  splashScreenTimer()
+  {
+    Timer(const Duration(seconds: 3), ()
+    {
+
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Material(
