@@ -29,6 +29,7 @@ class _MyDrawerState extends State<MyDrawer> {
                         "https://images.unsplash.com/photo-1446707052533-0e1d48e08aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJlc3N8ZW58MHx8MHx8&w=1000&q=80"),
                   ),
                 ),
+                const SizedBox(height: 12),
                 //user name
                 const Text(
                   "user Name",
