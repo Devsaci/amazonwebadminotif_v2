@@ -1,4 +1,3 @@
-
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -13,12 +12,13 @@ class MySplashScreen extends StatefulWidget {
 }
 
 class _MySplashScreenState extends State<MySplashScreen> {
-
-  splashScreenTimer()
-  {
-    Timer(const Duration(seconds: 3), ()
-    {
-      Navigator.push(context, MaterialPageRoute(builder: (c)=> const HomeScreen()));
+  splashScreenTimer() {
+    Timer(const Duration(seconds: 3), () {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (c) => const HomeScreen(),
+          ));
     });
   }
 
