@@ -25,7 +25,10 @@ class _MySplashScreenState extends State<MySplashScreen> {
             tileMode: TileMode.clamp,
           ),
         ),
-        child: Image.asset("name"),
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Image.asset("images/welcome.png"),
+        ),
       ),
     );
   }
