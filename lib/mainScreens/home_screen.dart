@@ -15,10 +15,20 @@ class HomeScreen extends StatelessWidget {
                 Colors.pinkAccent,
                 Colors.purpleAccent,
               ],
+              begin: FractionalOffset(0.0, 0.0),
+              end: FractionalOffset(1.0, 0.0),
+              stops: [0.0, 1.0],
+              tileMode: TileMode.clamp,
             ),
           ),
         ),
-        title: const Text("amazonwebadminotif"),
+        title: const Text(
+          "iShop",
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     );
   }
