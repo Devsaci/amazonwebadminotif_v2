@@ -13,21 +13,39 @@ class _MySplashScreenState extends State<MySplashScreen> {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
+        decoration: BoxDecoration(
+          gradient: RadialGradient(
+            transform: const GradientRotation(60),
+            center: Alignment.bottomCenter,
             colors: [
-              Colors.pinkAccent,
-              Colors.purpleAccent,
+              Colors.teal.shade300,
+              Colors.yellowAccent.shade100,
             ],
-            begin: FractionalOffset(0.0, 0.0),
-            end: FractionalOffset(1.0, 0.0),
-            stops: [0.0, 1.0],
-            tileMode: TileMode.clamp,
+            // begin: const FractionalOffset(0.0, 0.0),
+            // end: const FractionalOffset(1.0, 0.0),
+            stops: const [0.0, 1.0],
+            tileMode: TileMode.repeated,
           ),
         ),
-        child: Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Image.asset("images/welcome.png"),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Image.asset("images/welcome.png"),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                'iShop Users App',
+                style: TextStyle(
+                    fontSize: 20,
+                    letterSpacing: 3,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -11,14 +11,14 @@ class HomeScreen extends StatelessWidget {
       drawer: const MyDrawer(),
       appBar: AppBar(
         flexibleSpace: Container(
-          decoration: const BoxDecoration(
+          decoration:  BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
+                Colors.teal.shade50,
+                Colors.teal.shade600,
               ],
-              begin: FractionalOffset(0.0, 0.0),
-              end: FractionalOffset(1.0, 0.0),
+              begin: const FractionalOffset(0.0, 0.0),
+              end: const FractionalOffset(1.0, 0.0),
               stops: [0.0, 1.0],
               tileMode: TileMode.clamp,
             ),
