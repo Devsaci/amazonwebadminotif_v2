@@ -25,6 +25,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
             tileMode: TileMode.clamp,
           ),
         ),
+        child: Image.asset("name"),
       ),
     );
   }
