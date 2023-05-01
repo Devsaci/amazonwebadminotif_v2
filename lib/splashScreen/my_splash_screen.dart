@@ -12,6 +12,8 @@ class MySplashScreen extends StatefulWidget {
 }
 
 class _MySplashScreenState extends State<MySplashScreen> {
+
+  // splashScreenTimer fct
   splashScreenTimer() {
     Timer(const Duration(seconds: 3), () {
       Navigator.push(
