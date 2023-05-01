@@ -46,7 +46,7 @@ class _MyDrawerState extends State<MyDrawer> {
           //body
           Container(
             padding: const EdgeInsets.only(top: 1),
-            child:  Column(
+            child: Column(
               children: [
                 const Divider(
                   color: Colors.grey,
@@ -56,14 +56,19 @@ class _MyDrawerState extends State<MyDrawer> {
                 //home
                 ListTile(
                   leading: const Icon(Icons.home, color: Colors.grey),
-                  title: const Text("Home", style: TextStyle(color: Colors.grey)),
+                  title:
+                      const Text("Home", style: TextStyle(color: Colors.grey)),
                   onTap: () {},
                 ),
-                const Divider(
-                  color: Colors.grey,
-                  height: 10,
-                  thickness: 2,
+                const Divider(color: Colors.grey, height: 10, thickness: 2),
+                //my orders
+                ListTile(
+                  leading: const Icon(Icons.reorder, color: Colors.grey),
+                  title: const Text("My Orders",
+                      style: TextStyle(color: Colors.grey)),
+                  onTap: () {},
                 ),
+                const Divider(height: 10, color: Colors.grey, thickness: 2),
               ],
             ),
           )
