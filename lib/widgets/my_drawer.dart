@@ -24,11 +24,21 @@ class _MyDrawerState extends State<MyDrawer> {
                   height: 130,
                   width: 130,
                   child: CircleAvatar(),
-                )
+                ),
+                //user name
+                const Text(
+                  "user Name",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 12),
               ],
             ),
           ),
-          const SizedBox(height: 12),
+          //body
         ],
       ),
     );
