@@ -44,6 +44,29 @@ class _MyDrawerState extends State<MyDrawer> {
             ),
           ),
           //body
+          Container(
+            padding: const EdgeInsets.only(top: 1),
+            child:  Column(
+              children: [
+                const Divider(
+                  color: Colors.grey,
+                  height: 10,
+                  thickness: 2,
+                ),
+                //home
+                ListTile(
+                  leading: const Icon(Icons.home, color: Colors.grey),
+                  title: const Text("Home", style: TextStyle(color: Colors.grey)),
+                  onTap: () {},
+                ),
+                const Divider(
+                  color: Colors.grey,
+                  height: 10,
+                  thickness: 2,
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
