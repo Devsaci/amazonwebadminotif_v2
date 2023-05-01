@@ -100,6 +100,15 @@ class _MyDrawerState extends State<MyDrawer> {
                     ),
                     onTap: () {}),
                 const Divider(height: 10, color: Colors.grey, thickness: 2),
+                //logout
+                ListTile(
+                    leading: const Icon(Icons.exit_to_app, color: Colors.grey),
+                    title: const Text(
+                      "Sign Out",
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                    onTap: () {}),
+                const Divider(height: 10, color: Colors.grey, thickness: 2),
               ],
             ),
           )
