@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class MySplashScreen extends StatefulWidget {
   const MySplashScreen({Key? key}) : super(key: key);
@@ -10,6 +11,21 @@ class MySplashScreen extends StatefulWidget {
 class _MySplashScreenState extends State<MySplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Material(
+      child: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Colors.pinkAccent,
+              Colors.purpleAccent,
+            ],
+            begin: FractionalOffset(0.0, 0.0),
+            end: FractionalOffset(1.0, 0.0),
+            stops: [0.0, 1.0],
+            tileMode: TileMode.clamp,
+          ),
+        ),
+      ),
+    );
   }
 }
