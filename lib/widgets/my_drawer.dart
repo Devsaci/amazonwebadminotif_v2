@@ -69,6 +69,14 @@ class _MyDrawerState extends State<MyDrawer> {
                   onTap: () {},
                 ),
                 const Divider(height: 10, color: Colors.grey, thickness: 2),
+                //not yet received orders
+                ListTile(
+                    leading: const Icon(Icons.picture_in_picture_alt_rounded,
+                        color: Colors.grey),
+                    title: const Text("Not Yet Received Orders",
+                        style: TextStyle(color: Colors.grey)),
+                    onTap: () {}),
+                const Divider(height: 10, color: Colors.grey, thickness: 2),
               ],
             ),
           )
