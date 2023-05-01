@@ -1,5 +1,6 @@
-import 'package:amazonwebadminotif_v2/mainScreens/home_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'splashScreen/my_splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const HomeScreen(),
+      home: const MySplashScreen(),
     );
   }
 }
