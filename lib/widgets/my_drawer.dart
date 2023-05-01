@@ -77,6 +77,20 @@ class _MyDrawerState extends State<MyDrawer> {
                         style: TextStyle(color: Colors.grey)),
                     onTap: () {}),
                 const Divider(height: 10, color: Colors.grey, thickness: 2),
+                //history
+                ListTile(
+                    leading: const Icon(Icons.access_time, color: Colors.grey),
+                    title: const Text("History",
+                        style: TextStyle(color: Colors.grey)),
+                    onTap: () {}),
+                const Divider(height: 10, color: Colors.grey, thickness: 2),
+                //history
+                ListTile(
+                    leading: const Icon(Icons.access_time, color: Colors.grey),
+                    title: const Text("History",
+                        style: TextStyle(color: Colors.grey)),
+                    onTap: () {}),
+                const Divider(height: 10, color: Colors.grey, thickness: 2),
               ],
             ),
           )
