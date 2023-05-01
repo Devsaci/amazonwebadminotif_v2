@@ -3,6 +3,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../mainScreens/home_screen.dart';
+
 class MySplashScreen extends StatefulWidget {
   const MySplashScreen({Key? key}) : super(key: key);
 
@@ -16,7 +18,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
   {
     Timer(const Duration(seconds: 3), ()
     {
-
+      Navigator.push(context, MaterialPageRoute(builder: (c)=> const HomeScreen()));
     });
   }
 
