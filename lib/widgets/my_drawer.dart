@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatefulWidget {
@@ -107,7 +108,11 @@ class _MyDrawerState extends State<MyDrawer> {
                       "Sign Out",
                       style: TextStyle(color: Colors.grey),
                     ),
-                    onTap: () {}),
+                    onTap: () {
+                      if (kDebugMode) {
+                        print("Sign Out");
+                      }
+                    }),
                 const Divider(height: 10, color: Colors.grey, thickness: 2),
               ],
             ),
