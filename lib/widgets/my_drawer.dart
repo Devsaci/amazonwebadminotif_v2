@@ -11,6 +11,26 @@ class MyDrawer extends StatefulWidget {
 class _MyDrawerState extends State<MyDrawer> {
   @override
   Widget build(BuildContext context) {
-    return const Drawer();
+    return Drawer(
+      backgroundColor: Colors.black54,
+      child: ListView(
+        children: [
+          //header
+          Container(
+            child: Column(
+              children: [
+                //user profile image
+                Container(
+                  height: 130,
+                  width: 130,
+                  child: CircleAvatar(),
+                )
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+        ],
+      ),
+    );
   }
 }
