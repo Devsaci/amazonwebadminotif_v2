@@ -8,6 +8,16 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Colors.pinkAccent,
+                Colors.purpleAccent,
+              ],
+            ),
+          ),
+        ),
         title: const Text("amazonwebadminotif"),
       ),
     );
