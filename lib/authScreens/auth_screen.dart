@@ -46,15 +46,15 @@ class AuthScreen extends StatelessWidget {
           ),
         ),
         body: Container(
-          decoration: const BoxDecoration(
+          decoration:  BoxDecoration(
             gradient: RadialGradient(
               colors: [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
+                Colors.purple.shade50,
+                Colors.purple.shade300,
               ],
               // begin: FractionalOffset(0.0, 0.0),
               // end: FractionalOffset(1.0, 0.0),
-              stops: [0.0, 1.0],
+              stops: const [0.0, 1.0],
               tileMode: TileMode.repeated,
             ),
           ),
