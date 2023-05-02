@@ -28,6 +28,7 @@ class AuthScreen extends StatelessWidget {
             style: TextStyle(
                 fontSize: 30, letterSpacing: 3, fontWeight: FontWeight.bold),
           ),
+          centerTitle: true,
         ),
       ),
     );
