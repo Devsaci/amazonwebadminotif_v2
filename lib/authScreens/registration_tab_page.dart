@@ -12,8 +12,14 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
         child: Container(
-      child: const Column(
-        children: [],
+      child: Column(
+        children: [
+          const SizedBox(height: 12),
+          //get-capture image
+          GestureDetector(
+            onTap: () {},
+          )
+        ],
       ),
     ));
   }
