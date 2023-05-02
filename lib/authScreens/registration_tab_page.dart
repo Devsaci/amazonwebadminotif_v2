@@ -10,6 +10,8 @@ class RegistrationTabPage extends StatefulWidget {
 }
 
 class _RegistrationTabPageState extends State<RegistrationTabPage> {
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -33,7 +35,14 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
                 size: MediaQuery.of(context).size.width * 0.2,
               ),
             ),
-          )
+          ),
+          const SizedBox(height: 12),
+          //inputs form fields
+          Form(
+            key: formKey,
+              child: Column(
+            children: [],
+          ))
         ],
       ),
     ));
