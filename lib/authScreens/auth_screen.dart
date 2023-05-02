@@ -46,7 +46,7 @@ class AuthScreen extends StatelessWidget {
           ),
         ),
         body: Container(
-          decoration:  BoxDecoration(
+          decoration: BoxDecoration(
             gradient: RadialGradient(
               colors: [
                 Colors.purple.shade50,
@@ -57,6 +57,9 @@ class AuthScreen extends StatelessWidget {
               stops: const [0.0, 1.0],
               tileMode: TileMode.repeated,
             ),
+          ),
+          child: const TabBarView(
+            children: [],
           ),
         ),
       ),
