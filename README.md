@@ -66,6 +66,11 @@ Course content
    # 5. custom splash screen in flutter
    13:33
 
-# 5. custom splash screen in flutter
-13:33
+   # Section 3: User App - Login  &  SingUp UI
+   # 7. implement flutter tab controller and tab bar view for auth screen
+   12min
+   # 8. design sign up page ui
+   23min
+   # 9. design login page ui
+   7min
  
