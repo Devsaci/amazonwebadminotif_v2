@@ -30,9 +30,16 @@ class AuthScreen extends StatelessWidget {
           ),
           centerTitle: true,
           bottom: const TabBar(
+            indicatorColor: Colors.black87,
+            
             tabs: [
-              Tab(text: "Login", icon: Icon(Icons.lock, color: Colors.white)),
-              Tab(text: "Registration", icon: Icon( Icons.person, color: Colors.white)),
+              Tab(
+                text: "Login",
+                icon: Icon(Icons.lock, color: Colors.white),
+              ),
+              Tab(
+                  text: "Registration",
+                  icon: Icon(Icons.person, color: Colors.white)),
             ],
           ),
         ),
