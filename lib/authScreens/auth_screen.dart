@@ -12,7 +12,10 @@ class AuthScreen extends StatelessWidget {
           flexibleSpace: Container(
             decoration: const BoxDecoration(
                 gradient: LinearGradient(
-              colors: [],
+              colors: [
+                Colors.pinkAccent,
+                Colors.purpleAccent,
+              ],
             )),
           ),
         ),
