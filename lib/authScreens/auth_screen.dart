@@ -29,6 +29,11 @@ class AuthScreen extends StatelessWidget {
                 fontSize: 30, letterSpacing: 3, fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
+          bottom: const TabBar(
+            tabs: [
+              Tab(text: "Login", icon: Icon(Icons.lock, color: Colors.white)),
+            ],
+          ),
         ),
       ),
     );
