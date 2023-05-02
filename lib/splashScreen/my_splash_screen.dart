@@ -36,7 +36,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
       child: Container(
         decoration: BoxDecoration(
           gradient: RadialGradient(
-            transform: const GradientRotation(60),
+            transform: const GradientRotation(10),
             center: Alignment.bottomCenter,
             colors: [
               Colors.teal.shade300,
@@ -49,23 +49,26 @@ class _MySplashScreenState extends State<MySplashScreen> {
           ),
         ),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Image.asset("images/welcome.png"),
-              ),
-              const SizedBox(height: 10),
-              const Text(
-                'iShop Users App',
-                style: TextStyle(
-                    fontSize: 20,
-                    letterSpacing: 3,
-                    color: Colors.black87,
-                    fontWeight: FontWeight.bold),
-              ),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Image.asset("images/welcome.png"),
+                ),
+                const SizedBox(height: 10),
+                const Text(
+                  'iShop Users App',
+                  style: TextStyle(
+                      fontSize: 20,
+                      letterSpacing: 3,
+                      color: Colors.black87,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ),
         ),
       ),

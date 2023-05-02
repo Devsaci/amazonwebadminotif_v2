@@ -1,4 +1,3 @@
-
 import 'package:amazonwebadminotif_v2/widgets/my_drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -11,11 +10,11 @@ class HomeScreen extends StatelessWidget {
       drawer: const MyDrawer(),
       appBar: AppBar(
         flexibleSpace: Container(
-          decoration:  BoxDecoration(
+          decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.teal.shade50,
                 Colors.teal.shade600,
+                Colors.teal.shade50,
               ],
               begin: const FractionalOffset(0.0, 0.0),
               end: const FractionalOffset(1.0, 0.0),
