@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class RegistrationTabPage extends StatefulWidget {
   const RegistrationTabPage({Key? key}) : super(key: key);
@@ -18,6 +19,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
           //get-capture image
           GestureDetector(
             onTap: () {},
+            child: CircleAvatar(),
           )
         ],
       ),
