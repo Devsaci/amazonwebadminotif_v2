@@ -11,16 +11,22 @@ class AuthScreen extends StatelessWidget {
         appBar: AppBar(
           flexibleSpace: Container(
             decoration: const BoxDecoration(
-                gradient: LinearGradient(
-              colors: [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
-              ],
-                  begin: FractionalOffset(0.0, 0.0),
-                  end: FractionalOffset(1.0, 0.0),
-                  stops: [0.0, 1.0],
-                  tileMode: TileMode.clamp,
-            )),
+              gradient: LinearGradient(
+                colors: [
+                  Colors.pinkAccent,
+                  Colors.purpleAccent,
+                ],
+                begin: FractionalOffset(0.0, 0.0),
+                end: FractionalOffset(1.0, 0.0),
+                stops: [0.0, 1.0],
+                tileMode: TileMode.clamp,
+              ),
+            ),
+          ),
+          title: const Text(
+            "iShop",
+            style: TextStyle(
+                fontSize: 30, letterSpacing: 3, fontWeight: FontWeight.bold),
           ),
         ),
       ),
