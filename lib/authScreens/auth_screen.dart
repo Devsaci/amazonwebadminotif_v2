@@ -1,3 +1,5 @@
+import 'package:amazonwebadminotif_v2/authScreens/login_tab_page.dart';
+import 'package:amazonwebadminotif_v2/authScreens/registration_tab_page.dart';
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -59,7 +61,10 @@ class AuthScreen extends StatelessWidget {
             ),
           ),
           child: const TabBarView(
-            children: [],
+            children: [
+              LoginTabPage(),
+              RegistrationTabPage(),
+            ],
           ),
         ),
       ),
