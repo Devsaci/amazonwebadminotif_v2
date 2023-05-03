@@ -20,80 +20,86 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-        child: Container(
-      child: Column(
-        children: [
-          const SizedBox(height: 12),
-          //get-capture image
-          GestureDetector(
-            onTap: () {
-              if (kDebugMode) {
-                print("Add Photo");
-              }
-            },
-            child: CircleAvatar(
-              radius: MediaQuery.of(context).size.width * 0.2,
-              backgroundColor: Colors.black87,
-              child: Icon(
-                Icons.add_photo_alternate,
-                color: Colors.amber,
-                size: MediaQuery.of(context).size.width * 0.2,
+      child: Container(
+        child: Column(
+          children: [
+            const SizedBox(height: 12),
+            //get-capture image
+            GestureDetector(
+              onTap: () {
+                if (kDebugMode) {
+                  print("Add Photo");
+                }
+              },
+              child: CircleAvatar(
+                radius: MediaQuery.of(context).size.width * 0.2,
+                backgroundColor: Colors.black87,
+                child: Icon(
+                  Icons.add_photo_alternate,
+                  color: Colors.amber,
+                  size: MediaQuery.of(context).size.width * 0.2,
+                ),
               ),
             ),
-          ),
-          const SizedBox(height: 12),
-          //inputs form fields
-          Form(
-            key: formKey,
-            child: Column(
-              children: [
-                //name
-                CustomTextField(
-                  textEditingController: nameTextEditingController,
-                  iconData: Icons.person,
-                  hintText: "Name",
-                  isObsecre: false,
-                  enabled: true,
-                ),
-                //email
-                CustomTextField(
-                  textEditingController: emailTextEditingController,
-                  iconData: Icons.email,
-                  hintText: "Email",
-                  isObsecre: false,
-                  enabled: true,
-                ),
-                //pass
-                CustomTextField(
-                  textEditingController: passwordTextEditingController,
-                  iconData: Icons.lock,
-                  hintText: "Password",
-                  isObsecre: true,
-                  enabled: true,
-                ),
+            const SizedBox(height: 12),
+            //inputs form fields
+            Form(
+              key: formKey,
+              child: Column(
+                children: [
+                  //name
+                  CustomTextField(
+                    textEditingController: nameTextEditingController,
+                    iconData: Icons.person,
+                    hintText: "Name",
+                    isObsecre: false,
+                    enabled: true,
+                  ),
+                  //email
+                  CustomTextField(
+                    textEditingController: emailTextEditingController,
+                    iconData: Icons.email,
+                    hintText: "Email",
+                    isObsecre: false,
+                    enabled: true,
+                  ),
+                  //pass
+                  CustomTextField(
+                    textEditingController: passwordTextEditingController,
+                    iconData: Icons.lock,
+                    hintText: "Password",
+                    isObsecre: true,
+                    enabled: true,
+                  ),
 
-                //confirm pass
-                CustomTextField(
-                  textEditingController: confirmPasswordTextEditingController,
-                  iconData: Icons.lock,
-                  hintText: "Confirm Password",
-                  isObsecre: true,
-                  enabled: true,
-                ),
-                const SizedBox(height: 20),
-              ],
+                  //confirm pass
+                  CustomTextField(
+                    textEditingController: confirmPasswordTextEditingController,
+                    iconData: Icons.lock,
+                    hintText: "Confirm Password",
+                    isObsecre: true,
+                    enabled: true,
+                  ),
+                  const SizedBox(height: 20),
+                ],
+              ),
             ),
-          ),
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text(
-              "Sign Up",
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.pinkAccent,
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 12),
+              ),
+              onPressed: () {},
+              child: const Text(
+                "Sign Up",
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
             ),
-          )
-        ],
+            const SizedBox(height: 20),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }
