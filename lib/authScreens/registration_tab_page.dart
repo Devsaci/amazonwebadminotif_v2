@@ -1,4 +1,4 @@
-
+import 'package:amazonwebadminotif_v2/widgets/custom_text_field.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +11,7 @@ class RegistrationTabPage extends StatefulWidget {
 
 class _RegistrationTabPageState extends State<RegistrationTabPage> {
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  TextEditingController nameTextEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -39,13 +40,20 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
           const SizedBox(height: 12),
           //inputs form fields
           Form(
-              key: formKey,
-              child: Column(
-                children: [
-                  //name
-
-                ],
-              ))
+            key: formKey,
+            child: Column(
+              children: [
+                //name
+                CustomTextField(
+                  textEditingController: nameTextEditingController,
+                  iconData: Icons.person,
+                  hintText: "Name",
+                  isObsecre: false,
+                  enabled: true,
+                ),
+              ],
+            ),
+          )
         ],
       ),
     ));
