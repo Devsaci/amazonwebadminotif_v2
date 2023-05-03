@@ -30,6 +30,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         color: Colors.white,
         borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
+      padding: const EdgeInsets.all(8.0),
     );
   }
 }
