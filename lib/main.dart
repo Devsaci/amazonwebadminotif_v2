@@ -1,3 +1,4 @@
+import 'package:amazonwebadminotif_v2/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
 import 'authScreens/auth_screen.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: const AuthScreen(),
+      home:  CustomTextField(),
     );
   }
 }
