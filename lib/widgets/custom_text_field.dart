@@ -37,6 +37,15 @@ class _CustomTextFieldState extends State<CustomTextField> {
         controller: widget.textEditingController,
         obscureText: widget.isObsecre!,
         cursorColor: Theme.of(context).primaryColor,
+        decoration: InputDecoration(
+          border: InputBorder.none,
+          prefixIcon: Icon(
+            widget.iconData,
+            color: Colors.purpleAccent,
+          ),
+          focusColor: Theme.of(context).primaryColor,
+          hintText: widget.hintText,
+        ),
       ),
     );
   }
