@@ -14,7 +14,8 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
   TextEditingController nameTextEditingController = TextEditingController();
   TextEditingController emailTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
-  TextEditingController confirmPasswordTextEditingController = TextEditingController();
+  TextEditingController confirmPasswordTextEditingController =
+      TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -79,7 +80,16 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
                   isObsecre: true,
                   enabled: true,
                 ),
+                const SizedBox(height: 20),
               ],
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text(
+              "Sign Up",
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
           )
         ],
