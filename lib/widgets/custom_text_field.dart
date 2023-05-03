@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 class CustomTextField extends StatefulWidget {
   const CustomTextField({Key? key}) : super(key: key);
 
+  TextEditingController? textEditingController;
+  IconData? iconData;
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
 }
