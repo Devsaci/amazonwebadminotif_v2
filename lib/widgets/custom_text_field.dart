@@ -7,6 +7,7 @@ class CustomTextField extends StatefulWidget {
   IconData? iconData;
   String? hintText;
   bool? isObsecre = true;
+  bool? enabled = true;
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
 }
