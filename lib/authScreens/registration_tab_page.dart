@@ -39,10 +39,13 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
           const SizedBox(height: 12),
           //inputs form fields
           Form(
-            key: formKey,
+              key: formKey,
               child: Column(
-            children: [],
-          ))
+                children: [
+                  //name
+
+                ],
+              ))
         ],
       ),
     ));
