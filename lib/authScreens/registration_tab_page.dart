@@ -14,6 +14,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
   TextEditingController nameTextEditingController = TextEditingController();
   TextEditingController emailTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
+  TextEditingController confirmPasswordTextEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +67,15 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
                   textEditingController: passwordTextEditingController,
                   iconData: Icons.lock,
                   hintText: "Password",
+                  isObsecre: true,
+                  enabled: true,
+                ),
+
+                //confirm pass
+                CustomTextField(
+                  textEditingController: confirmPasswordTextEditingController,
+                  iconData: Icons.lock,
+                  hintText: "Confirm Password",
                   isObsecre: true,
                   enabled: true,
                 ),
