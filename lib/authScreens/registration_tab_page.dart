@@ -12,6 +12,7 @@ class RegistrationTabPage extends StatefulWidget {
 class _RegistrationTabPageState extends State<RegistrationTabPage> {
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
   TextEditingController nameTextEditingController = TextEditingController();
+  TextEditingController emailTextEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +49,14 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
                   textEditingController: nameTextEditingController,
                   iconData: Icons.person,
                   hintText: "Name",
+                  isObsecre: false,
+                  enabled: true,
+                ),
+                //email
+                CustomTextField(
+                  textEditingController: emailTextEditingController,
+                  iconData: Icons.email,
+                  hintText: "Email",
                   isObsecre: false,
                   enabled: true,
                 ),
