@@ -87,9 +87,14 @@ class _RegistrationTabPageState extends State<RegistrationTabPage> {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.pinkAccent,
-                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 50, vertical: 12),
               ),
-              onPressed: () {},
+              onPressed: () {
+                if (kDebugMode) {
+                  print("Sign Up");
+                }
+              },
               child: const Text(
                 "Sign Up",
                 style:
