@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class CustomTextField extends StatefulWidget {
   // CustomTextField({Key? key}) : super(key: key);
@@ -25,6 +25,10 @@ class CustomTextField extends StatefulWidget {
 class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      decoration: const BoxDecoration(
+        color: Colors.white,
+      ),
+    );
   }
 }
