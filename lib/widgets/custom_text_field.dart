@@ -34,6 +34,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
       margin: const EdgeInsets.all(8.0),
       child: TextFormField(
         enabled: widget.enabled,
+        controller: widget.textEditingController,
       ),
     );
   }
