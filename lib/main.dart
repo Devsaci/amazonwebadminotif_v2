@@ -1,7 +1,7 @@
 import 'package:amazonwebadminotif_v2/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 
-import 'authScreens/auth_screen.dart';
+
 
 
 void main() {

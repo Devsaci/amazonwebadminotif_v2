@@ -28,6 +28,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return Container(
       decoration: const BoxDecoration(
         color: Colors.white,
+        borderRadius: BorderRadius.all(Radius.circular(10)),
       ),
     );
   }
