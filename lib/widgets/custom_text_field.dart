@@ -5,6 +5,8 @@ class CustomTextField extends StatefulWidget {
 
   TextEditingController? textEditingController;
   IconData? iconData;
+  String? hintText;
+  bool? isObsecre = true;
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
 }
