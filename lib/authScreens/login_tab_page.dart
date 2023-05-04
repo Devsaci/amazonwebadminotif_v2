@@ -24,7 +24,7 @@ class _LoginTabPageState extends State<LoginTabPage> {
             padding: const EdgeInsets.all(8.0),
             child: Image.asset(
               "images/login.png",
-              height: MediaQuery.of(context).size.width * 0.4,
+              height: MediaQuery.of(context).size.width * 0.6,
             ),
           ),
           Form(
