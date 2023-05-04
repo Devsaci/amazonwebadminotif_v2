@@ -3,11 +3,14 @@ import 'package:flutter/cupertino.dart';
 class LoginTabPage extends StatefulWidget {
   const LoginTabPage({Key? key}) : super(key: key);
 
+
+
   @override
   State<LoginTabPage> createState() => _LoginTabPageState();
 }
 
 class _LoginTabPageState extends State<LoginTabPage> {
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,6 +22,10 @@ class _LoginTabPageState extends State<LoginTabPage> {
             height: MediaQuery.of(context).size.width * 0.4,
           ),
         ),
+        Form(
+          key: formKey,
+          child: Column(),
+        )
       ],
     );
   }
