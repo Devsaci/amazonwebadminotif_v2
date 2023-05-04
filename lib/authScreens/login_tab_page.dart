@@ -10,14 +10,13 @@ class LoginTabPage extends StatefulWidget {
 class _LoginTabPageState extends State<LoginTabPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Image.asset(
-            "images/login.png",
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        Image.asset(
+          "images/login.png",
+          height: MediaQuery.of(context).size.width * 0.4,
+        ),
+      ],
     );
   }
 }
