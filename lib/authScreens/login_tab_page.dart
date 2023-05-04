@@ -13,6 +13,7 @@ class LoginTabPage extends StatefulWidget {
 class _LoginTabPageState extends State<LoginTabPage> {
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
   TextEditingController emailTextEditingController = TextEditingController();
+  TextEditingController passwordTextEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +37,13 @@ class _LoginTabPageState extends State<LoginTabPage> {
                 hintText: "Email",
                 isObsecre: false,
                 enabled: true,
+              ),
+              CustomTextField(
+                enabled: true,
+                hintText: "Password",
+                iconData: Icons.lock,
+                isObsecre: true,
+                textEditingController: passwordTextEditingController,
               ),
             ],
           ),
