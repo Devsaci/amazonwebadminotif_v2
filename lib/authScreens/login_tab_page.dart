@@ -17,38 +17,40 @@ class _LoginTabPageState extends State<LoginTabPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Image.asset(
-            "images/login.png",
-            height: MediaQuery.of(context).size.width * 0.4,
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Image.asset(
+              "images/login.png",
+              height: MediaQuery.of(context).size.width * 0.4,
+            ),
           ),
-        ),
-        Form(
-          key: formKey,
-          child: Column(
-            children: [
-              //email
-              CustomTextField(
-                textEditingController: emailTextEditingController,
-                iconData: Icons.email,
-                hintText: "Email",
-                isObsecre: false,
-                enabled: true,
-              ),
-              CustomTextField(
-                enabled: true,
-                hintText: "Password",
-                iconData: Icons.lock,
-                isObsecre: true,
-                textEditingController: passwordTextEditingController,
-              ),
-            ],
+          Form(
+            key: formKey,
+            child: Column(
+              children: [
+                //email
+                CustomTextField(
+                  textEditingController: emailTextEditingController,
+                  iconData: Icons.email,
+                  hintText: "Email",
+                  isObsecre: false,
+                  enabled: true,
+                ),
+                CustomTextField(
+                  enabled: true,
+                  hintText: "Password",
+                  iconData: Icons.lock,
+                  isObsecre: true,
+                  textEditingController: passwordTextEditingController,
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
