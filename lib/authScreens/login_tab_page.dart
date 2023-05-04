@@ -10,6 +10,12 @@ class LoginTabPage extends StatefulWidget {
 class _LoginTabPageState extends State<LoginTabPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
