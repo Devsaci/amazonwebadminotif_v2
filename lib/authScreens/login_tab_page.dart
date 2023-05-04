@@ -12,9 +12,12 @@ class _LoginTabPageState extends State<LoginTabPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(
-          "images/login.png",
-          height: MediaQuery.of(context).size.width * 0.4,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Image.asset(
+            "images/login.png",
+            height: MediaQuery.of(context).size.width * 0.4,
+          ),
         ),
       ],
     );
