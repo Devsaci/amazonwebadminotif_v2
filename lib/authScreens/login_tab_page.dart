@@ -56,8 +56,13 @@ class _LoginTabPageState extends State<LoginTabPage> {
               padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 12),
             ),
             onPressed: () {},
-            child: const Text("Login"),
-          )
+            child: const Text(
+              "Login",
+              style:
+                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+          ),
+          const SizedBox(height: 30),
         ],
       ),
     );
