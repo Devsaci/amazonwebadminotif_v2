@@ -46,9 +46,14 @@ class _LoginTabPageState extends State<LoginTabPage> {
                   isObsecre: true,
                   textEditingController: passwordTextEditingController,
                 ),
+                const SizedBox(height: 10),
               ],
             ),
           ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text("Login"),
+          )
         ],
       ),
     );
