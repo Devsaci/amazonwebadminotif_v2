@@ -51,6 +51,7 @@ class _LoginTabPageState extends State<LoginTabPage> {
             ),
           ),
           ElevatedButton(
+            style: ElevatedButton.styleFrom(),
             onPressed: () {},
             child: const Text("Login"),
           )
