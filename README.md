@@ -73,4 +73,7 @@ Course content
    23min
    # 9. design login page ui
    7min
- 
+
+   # Section : User App - create Firebase project
+   # 11. create firebase project and connect users app with firebase
+   15min
